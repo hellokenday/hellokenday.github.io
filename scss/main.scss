@@ -1,0 +1,35 @@
+// main.scss
+
+@charset 'utf-8';
+
+// Modules and variables
+@import 'modules/colors';
+@import 'modules/variables';
+
+
+// Bootstrap
+@import 'vendor/bootstrap';
+
+// Third-party
+@import 'vendor/boilerplate';
+@import 'vendor/normalize';
+@import 'vendor/bootstrap-overrides';
+@import 'vendor/lazyload';
+
+// Partials
+@import 'partials/layout';
+@import 'partials/buttons';
+@import 'partials/fontface';
+@import 'partials/typography';
+@import 'partials/icons';
+
+// Components
+@import 'components/navbar';
+
+// Helpers
+@import 'helpers/mixins';
+
+// Pages
+@import 'pages/homepage';
+@import 'pages/about';
+@import 'pages/project';
