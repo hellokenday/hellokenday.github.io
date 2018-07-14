@@ -54,7 +54,7 @@ article, aside, figcaption, figure, footer, header, hgroup, main, nav, section {
 /* line 57, /Users/hellokenday/Documents/portfolio-site/hellokenday.github.io/node_modules/bootstrap/scss/_reboot.scss */
 body {
   margin: 0;
-  font-family: "ApercuRegular";
+  font-family: "ApercuRegular", "Helvetica Neue", Arial;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5;
