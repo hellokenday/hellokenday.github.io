@@ -1,0 +1,18 @@
+// project.scss
+
+.project {
+  
+  p,
+  h3,
+  .list-unstyled{
+    margin-bottom: 0;
+  }
+}
+
+// lazyload images
+.loading {
+    content: "";
+    width: 960px;
+    height: auto;
+    background-color: $gray-100;
+}

@@ -1,0 +1,62 @@
+// navbar.scss
+
+.navbar {
+  padding: 0;
+  background: $white;
+  
+  .breadcrumb {
+    padding: 0.75rem 0rem;
+    margin-bottom: 0;
+  }
+  
+  // Hide next project on small devices
+  &.sticky-top .next-project {
+    @include media-breakpoint-down(sm) {
+      display: none;
+    } 
+  }
+}
+
+.sticky-top {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1020;
+}
+
+// Navbar bottom
+
+.next-project,
+.prev-project {
+  color: $dark-grey;
+}
+
+.next-project {
+  float: right;
+  &::after {
+    display: inline-block; // Suppress underlining of the separator in modern browsers
+    padding-left: .5rem;
+    content: $next-arrow;
+  }
+}
+
+.prev-project {
+  float: left;
+  &::before {
+    display: inline-block; // Suppress underlining of the separator in modern browsers
+    padding-right: .5rem;
+    content: $prev-arrow;
+  }
+  @include media-breakpoint-down(sm) {
+    display: none;
+  } 
+}
+
+.navbar-bottom {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: 0 16px;
+}
