@@ -15,7 +15,7 @@
   <link rel="stylesheet" href="../css/main.css">
 </head>
 
-<body>
+<body class="hidden">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -34,59 +34,42 @@
     </nav>
     
     <!-- intro -->
-    <div class="row mt-md-7 mt-5 mb-md-6 mb-6 196">
-      <div class="col-md-6">
-        <h3>The North Face</h3>
-      </div>
+    <div class="mt-md-7 mt-5 196">
+        <h2 class="text-md-center">The North Face</h2>
     </div>
-    
-    <!-- project info -->
-    <div class="row mt-md-3 mt-5">
-      <div class="col-md-6 mb-md-0 mb-6">
-        <ul class="list-unstyled">
-          <li>June - August 2014</li>
-          <li>UI Designer</li>
-        </ul>
-      </div>
-      <div class="col-md-6">
-        <p>
-          Basecamp is a custom dashboard built for the Claromentis intranet platform used to help teams communicate and improve productivity. It was my job to gather requirements, produce wireframe layouts and mockups, work with stakeholders to action design feedback, and develop the interface to replace an outdated system.  
-        </p>
-      </div> <!-- /.col-md-6 -->
-    </div> <!-- /.row -->
     
     <img data-src="images/tnf/tnf-mockups@2x.jpg" class="img-fluid mt-md-7 mt-6 lazy-load" alt="image">
-     
-    <!-- role -->
-    <div class="row mt-md-7 mt-6 mb-md-7">
-      <div class="col-md-6">
-        <h3 class="mb-3">Layout</h3>
-      </div>
-      <div class="col-md-6">
-        <p>
-          The North Face needed a responsive dashboard to keep track of seasonal product releases and deadlines. They experimented with social components for team communication but found they were not adopted effectively. We kept things simple, including components that would help with workflow and not distract users from finding relevant information, such as sales dates or product catalogues.
-        </p>
-      </div>
+    
+    <!-- introduction -->
+    <div class="section mt-md-7 mt-6 mb-md-7">
+      <h3 class="mb-3">Introduction</h3>
+      <p>
+          Basecamp is a custom dashboard built for the Claromentis intranet platform. It was my job to gather requirements, produce wireframe layouts and mockups, work with stakeholders to action design feedback, and develop the interface to replace an outdated system.  
+      </p>
     </div>
+    
+    <img data-src="images/tnf/tnf-introduction@2x.jpg" class="img-fluid mt-md-7 mt-6 lazy-load" alt="image">
      
+    <!-- layout -->
+    <div class="section mt-md-7 mt-6 mb-md-7">
+      <h3 class="mb-3">Layout</h3>
+      <p>
+        The North Face needed a responsive dashboard to keep track of seasonal product releases and deadlines. They experimented with social components for team communication but found they were not adopted effectively. We kept things simple, including components that would help with workflow and not distract users from finding relevant information, such as sales dates or product catalogues.
+      </p>
+    </div>
+    
     <img data-src="images/tnf/tnf-layout@2x.jpg" class="img-fluid mt-md-0 mt-6 lazy-load" alt="Process">
-     
+    
     <!-- branding -->
-    <div class="row mt-md-7 mt-6 mb-md-7">
-      <div class="col-md-6">
+    <div class="section mt-md-7 mt-6 mb-md-7">
         <h3 class="mb-3">Branding</h3>
-      </div>
-      <div class="col-md-6">
         <p>
           Taking their brand guidelines and adapting them to a style guide I was able to make the intranet complement The North Face brand.
           <br><br>
-          The theme throughout was for users to feel they are at basecamp, where they can find everything they need to push ahead with their tasks. This was achieved by using a mountaineering style background image, brand accent colours for secondary interface elements, and by keeping elements grouped by task. 
-          <br><br>
-          Looking back at it now, the contrast ratio for red text placed over background colours is not great enough to satisfy accessibility requirements. 
+          The theme throughout was for users to feel they are at base camp, where they can find everything they need to push ahead with their tasks. This was achieved by using a mountaineering style background image, brand accent colours for secondary interface elements, and by keeping elements grouped by task. 
         </p>
-      </div>
     </div>
-     
+    
     <!-- carousel -->
     <div id="carousel-tnf-1" class="carousel carousel-dark slide mt-md-0 mt-6" data-ride="carousel">
       <ol class="carousel-indicators">
@@ -132,12 +115,17 @@
     </nav>
 
   </div> <!-- /.container -->
+  
+  <noscript>
+    🙈 For full functionality of this page it is necessary to enable JavaScript. Here are the <a href="http://www.enable-javascript.com" target="_blank"> instructions how to enable JavaScript in your web browser</a>
+  </noscript>
 
   <!-- scripts -->
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
+  <script src="js/vendor/jquery.bootstrap-autohidingnavbar.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
 

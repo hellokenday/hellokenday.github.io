@@ -12,7 +12,6 @@
 
 // Third-party
 @import 'vendor/boilerplate';
-@import 'vendor/normalize';
 @import 'vendor/bootstrap-overrides';
 @import 'vendor/lazyload';
 
@@ -24,7 +23,9 @@
 @import 'partials/icons';
 
 // Components
+@import 'components/carousel';
 @import 'components/navbar';
+@import 'components/video';
 
 // Helpers
 @import 'helpers/mixins';
