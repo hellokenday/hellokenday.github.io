@@ -6,7 +6,8 @@
 
     h4 {
       @include media-breakpoint-down(sm) {
-        font-size: 16px;
+        font-size: 24px;
+        margin-bottom: 16px;
       }
       &:first-of-type {
         margin-right: 4px;
@@ -29,7 +30,15 @@
 
 .social-links {
   
-  a:hover {
-    opacity: 0.87;
+  .fab, .far {
+    font-size: 32px;
+  }
+  
+  a {
+    height: 40px;
+    width: 40px;
+    margin-right: 16px;
+    display: inline-block;
+    background-size: cover;
   }
 }

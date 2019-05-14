@@ -1,9 +1,9 @@
 $( document ).ready(function() {
   
-  checkNavbar();
+  checkComponents();
   fadeInPages();
   pauseCarousels();
-  scrollToAnchor();
+  initReadMoreLinks();
   
   window.LazyLoad = new LazyLoad({
     elements_selector: ".lazy-load",
@@ -11,15 +11,19 @@ $( document ).ready(function() {
   window.LazyLoad.update();
 });
 
-function checkNavbar() {
+function checkComponents() {
   
   if ($("nav").hasClass("navbar")) {
     
     // call navbar function
-    console.log("project");
     
     hideNavbarOnScroll();
     showHideNavTitle();
+  }
+  
+  if ($("body").hasClass("index")) {
+    
+    scrollToAnchor();
   }
 }
 
@@ -60,6 +64,19 @@ function showHideNavTitle() {
         $(".nav-title").addClass("invisible");
     }
   });  
+}
+
+function initReadMoreLinks() {
+
+  $('.read-more').click(function(){
+      var $this = $(this);
+      $this.toggleClass('read-more');
+      if($this.hasClass('read-more')){
+          $this.text('Read more');         
+      } else {
+          $this.text('Read less');
+      }
+  });
 }
 
 
@@ -116,3 +133,4 @@ function scrollToAnchor() {
   }; // Your options here. See "recipes" for more information about async.
 	b.appendChild(s);
 }(window, document));
+ 
