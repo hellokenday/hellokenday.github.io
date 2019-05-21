@@ -19,6 +19,8 @@ function checkComponents() {
     
     hideNavbarOnScroll();
     showHideNavTitle();
+    initOwlCarousels();
+    insertIframeStyles();
   }
   
   if ($("body").hasClass("index")) {
@@ -66,6 +68,30 @@ function showHideNavTitle() {
   });  
 }
 
+function initOwlCarousels() {
+
+  $('.owl-carousel').owlCarousel({
+    margin: 20,
+    loop: false,
+    items: 4,
+    dots: true,
+    responsive:{
+      320: {
+          items:2
+      },
+      600: {
+          items:2
+      },
+      1000: {
+          items:3
+      },
+      1600: {
+          items:4
+      }
+    }
+  })
+}
+
 function initReadMoreLinks() {
 
   $('.read-more').click(function(){
@@ -79,10 +105,7 @@ function initReadMoreLinks() {
   });
 }
 
-
 function scrollToAnchor() {
-  
-  console.log("scrollToAnchor");
 
   // Select all links with hashes
   $('a[href*="#"]')
@@ -120,6 +143,17 @@ function scrollToAnchor() {
       }
     }
   });
+}
+
+function insertIframeStyles() {
+  
+  var head = $("iframe").contents().find("head");
+  var css = '<style type="text/css">' +
+            '.player.player{box-shadow: 0 .125rem .25rem rgba(0,0,0,.075);margin-bottom: 5px;} ' +
+            '</style>';
+  $(head).append(css);
+  
+  console.log("insertIframeStyles");
 }
 
 // Lazyload images
