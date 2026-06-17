@@ -1,340 +1,200 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png">
+  <link rel="icon" type="image/png" sizes="512x512" href="favicon.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <title>About — Ken Day</title>
+  <meta name="description" content="About Ken Day, lead product designer — strategy and systems thinking to build impactful products people love.">
+  <link rel="stylesheet" href="css/clay-tokens.css">
+  <link rel="stylesheet" href="css/portfolio.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <link rel="stylesheet" href="css/media.css">
+  <link rel="stylesheet" href="css/about.css">
+  <script>(function(){try{var t=localStorage.getItem("theme")||"light";document.documentElement.setAttribute("data-theme",t);}catch(e){}})();</script>
+</head>
+<body>
+  <!-- Floating dark-mode toggle -->
+  <div class="theme-fab">
+    <button class="theme-toggle" type="button" aria-label="Switch to dark mode" aria-pressed="false">
+      <span class="tt-knob">
+        <span class="tt-icon tt-sun"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4"></circle><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"></path></svg></span>
+        <span class="tt-icon tt-moon"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"></path></svg></span>
+      </span>
+    </button>
+  </div>
+  <a class="skip-link" href="#main">Skip to content</a>
 
-  <head>
-    <meta charset="utf-8">
-    <title>About · Ken Day</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="A corporate Bootstrap theme by Medium Rare">
-    <link href="assets/css/loaders/loader-typing.css" rel="stylesheet" type="text/css" media="all" />
-    <link href="assets/css/theme.css" rel="stylesheet" type="text/css" media="all" />
-    <link rel="preload" as="font" href="assets/fonts/Inter-UI-upright.var.woff2" type="font/woff2" crossorigin="anonymous">
-    <link rel="preload" as="font" href="assets/fonts/Inter-UI.var.woff2" type="font/woff2" crossorigin="anonymous">
-    
-    <!-- font awesome -->
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
-    
-    <!-- favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
-    <link rel="manifest" href="assets/favicon/site.webmanifest">
-  </head>
-
-  <body data-smooth-scroll-offset="73" class="about">
-    <div class="loader">
-      <div class="loading-animation"></div>
+  <!-- ===================== BACK PILL (from the case-study pages) ===================== -->
+  <header class="cs-nav">
+    <div class="shell">
+      <a class="back-pill" href="index.html">
+        <span class="back-arrow" aria-hidden="true"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"></path><path d="M12 19l-7-7 7-7"></path></svg></span>
+        Back to Home
+      </a>
     </div>
-    <div class="navbar-container">
-      <nav class="navbar navbar-expand-lg navbar-light" data-overlay data-sticky="top">
-        <div class="container">
-          <a class="navbar-brand fade-page" href="index.html">
-            <img src="assets/img/logo.svg" alt="Kenday.">
-          </a>
-          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
-            <img class="icon navbar-toggler-open" src="assets/img/icons/interface/menu.svg" alt="menu interface icon" data-inject-svg />
-            <img class="icon navbar-toggler-close" src="assets/img/icons/interface/cross.svg" alt="cross interface icon" data-inject-svg />
-          </button>
-          <div class="collapse navbar-collapse justify-content-end">
-            <div class="py-2 py-lg-0">
-              <ul class="navbar-nav">
-                <li class="nav-item dropdown">
-                  <a href="index.html" class="nav-link" data>Projects</a>
-                </li>
-                <li class="nav-item dropdown">
-                  <a href="about.html" class="nav-link active" data>About</a>
-                </li>
-              </ul>
-            </div>
+  </header>
+
+  <main id="main">
+    <section class="band-tight about-top">
+      <div class="about-col">
+        <h1 class="sr-only">About</h1>
+
+        <!-- Portrait card -->
+        <div class="about-hero" data-reveal>
+          <p class="about-hero__title">Hello</p>
+          <div class="about-portrait">
+            <img src="images/portrait-ken.jpeg" alt="Ken Day standing on a mountain trail above Chamonix, with snow-capped peaks behind." />
           </div>
         </div>
-      </nav>
-    </div>
 
-    <section class="mt-md-9 mt-5">
-      <div class="container mt-8">
-        <h1>About</h1>
-        <p class="text-muted">Designer profile</p>
-        <p class="section mt-2 visit-site">
-          <a href="https://drive.google.com/open?id=1rKV9mWJFGzckYzQcaPocETIM7KU0WlH4" target="_blank">Résumé
-          <i class="fas fa-external-link-alt"></i>
-          </a>
-        </p>
-      </div>
-    </section>
-
-    <section class="text-light jarallax" data-jarallax data-speed="0.5">
-      <img class="jarallax-img" src="http://kenday.me/assets/img/about/about.jpg" alt="Profile image">
-      <div class="container">
-        <div class="row min-vh-60 align-items-center">
-        <!--
-          <div class="col text-center">
-            <span class="h1">Parallax Background</span>
-          </div>
-        -->
+        <!-- Narrative bio -->
+        <div class="about-bio" data-reveal-group>
+          <p data-reveal>I have over 10 years experience shaping products through design, front-end, and strategic product thinking.</p>
+          <p data-reveal>I spent five years at Multiverse, where I grew from product designer to lead. I designed Atlas, an AI coach that's answered 1.5M questions to date. Before that I worked on mobile apps, a workspace platform, and e-learning web apps.</p>
+          <p data-reveal>Today I'm a lead product designer at Unobravo, working closely with
+            therapists to figure out how AI can make mental healthcare easier to access.</p>
+          <p data-reveal>I love building products that make people more capable and happier. Away from the
+            screen I'm usually in the sea, hiking up a mountain, climbing, or getting lost in a museum.</p>
         </div>
-      </div>
-    </section>
 
-    <!-- hello -->
-    <div class="mt-md-7 mt-6 container">
-      <div class="section">
-        <h2>Hey there!</h2>
+        <!-- Experience -->
+        <section class="about-section about-section--card" data-reveal-group>
+          <h2 class="about-h2" data-reveal>Experience</h2>
+          <div class="xp-item" data-reveal>
+            <p class="xp-date">Dec 2025 — Present</p>
+            <h3>Lead product designer, AI products · Unobravo</h3>
+            <p>Working closely with therapists to design new AI products that support Unobravo's mission to improve access to mental-health care. I also support and mentor designers in using AI effectively throughout the product design process.</p>
+          </div>
+          <div class="xp-item" data-reveal>
+            <p class="xp-date">2020 — 2025</p>
+            <h3>Lead → Senior → product designer · Multiverse</h3>
+            <p>Led product design strategy across a core pillar — supporting learners, coaches, and learning designers. I designed and built Atlas, our 0→1 AI Guide, now used by thousands of learners. As the team's accessibility champion, I led accessibility across product and achieved WCAG AA compliance.</p>
+          </div>
+          <div class="xp-item" data-reveal>
+            <p class="xp-date">2019 — 2020</p>
+            <h3>Founding product designer · FastTask</h3>
+            <p>Led design for HeyBryan’s expert and consumer apps, focusing on growth, trust, and delivery speed. I launched the design system, ran rapid experiments, and shipped improvements that moved key metrics.</p>
+          </div>
+          <div class="xp-item" data-reveal>
+            <p class="xp-date">2017 — 2018</p>
+            <h3>Product designer · TrustedHousesitters</h3>
+            <p>Worked across web and mobile to improve key journeys and drive growth — redesigned the platform, built the design system, and ran sprints on sign-up and onboarding. (App of the Day in the UK App Store.)</p>
+          </div>
+          <div class="xp-item" data-reveal>
+            <p class="xp-date">2014 — 2017</p>
+            <h3>Product designer · Claromentis</h3>
+            <p>A digital workplace platform for file sharing, communication, and collaboration. Led product design and front-end development, launching the customisable intranet platform.</p>
+          </div>
+          <div class="xp-item" data-reveal>
+            <p class="xp-date">2012 — 2013</p>
+            <h3>Student developer · Kineo</h3>
+            <p>A workplace learning company specialising in digital training content. I built HTML templates to bring visual designs to life, delivered assets for interactive e-learning modules, and supported the design team with graphics and mockups.</p>
+          </div>
+        </section>
 
-        <p>
-            Flattered you’d like to know me better. I’m a lover of thoughtful design that is user-focused, data-driven, and which is shaped by new technologies. The challenge of delivering products that impact people in meaningful ways is what drives me to keep learning about product design.
-            <br><br>
-            Away from design, you can find me climbing rocks, riding bikes, and playing video games to 90s hip-hop or chillwave.
-        </p>
-      </div>
-    
-      <!-- employment -->
-      <div class="mt-md-7 mt-6 section">
-          <h2>Experience</h2>
+        <!-- Education -->
+        <section class="about-section" data-reveal-group>
+          <h2 class="about-h2" data-reveal>Education</h2>
+          <div class="xp-item" data-reveal>
+            <p class="xp-date">2010 — 2014</p>
+            <h3>BSc, Digital Media · University of Brighton</h3>
+            <p>Focused on human–computer interaction and mobile application design.</p>
+          </div>
+          <div class="xp-item" data-reveal>
+            <p class="xp-date">Issued Aug 2020</p>
+            <h3>Digital product Management · FutureLearn</h3>
+            <p>A certification in modern digital product management practice.</p>
+            <a class="btn btn--secondary" href="https://www.futurelearn.com/certificates/jo9g9aa" target="_blank" rel="noopener noreferrer" style="margin-top:14px">See certification <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 17 17 7"></path><path d="M7 7h10v10"></path></svg></a>
+          </div>
+        </section>
 
-          <div class="block mb-5 mt-md-1">
-            <h3 class="d-inline-block">
-              WhiteHat <span class="text-muted font-weight-light">Product Designer</span>
-            </h3>
-            <p class="mb-2">
-              WhiteHat is a startup, founded to ensure young people have access to the best career-focused apprenticeships on offer.
-            </p>
-            <span class="text-muted">March 2020 - Present</span>
-          </div>
-          
-          <div class="block mb-5">
-            <h3 class="d-inline-block">
-              HeyBryan <span class="text-muted font-weight-light">Product Designer</span>
-            </h3>
-            <p class="mb-2">
-              HeyBryan is a startup that connects home service experts with anyone who needs tasks done around the home. My focus was on designing for growth, creating the design system, and running experiments to validate features.
-            </p>
-            <span class="text-muted">10 months</span>
-          </div>
-        
-          <div class="block mb-5">
-            <h3 class="d-inline-block">
-              TrustedHousesitters <span class="text-muted font-weight-light">Product Designer</span>
-            </h3>
-            <p class="mb-2">
-              TrustedHousesitters is a house and pet sitting platform for people to look after pets in exchange for a place to stay. I started my time here creating the design system and redesigning the web app. I then began working in design sprints to develop features for both the web and mobile app.
-            </p>
-            <span class="text-muted">1 year 5 months</span>
-          </div>
-          
-          <div class="block mb-5">
-            <h3 class="d-inline-block">
-              Claromentis <span class="text-muted font-weight-light">Product Designer</span>
-            </h3>
-            <p class="mb-2">
-              Claromentis is a digital workspace that helps teams share files, communicate, and work together. I worked across multiple disciplines including user interface design, user experience design, and front-end development.
-            </p>
-            <span class="text-muted">2 years 7 months</span>
-          </div>
-          
-          <div class="block">
-            <h3 class="d-inline-block">
-              Kineo <span class="text-muted font-weight-light">Student Developer</span>
-            </h3>
-            <p class="mb-2">
-              Kineo is a workplace learning company specialising in e-learning content. I worked alongside designers and developers to create graphical assets and help bring designs to life in code.
-            </p>
-            <span class="text-muted">1 year</span>
-          </div>
-          
-      </div> <!-- .row -->
-      
-      <!-- skills -->
-      <div class="mt-md-7 mt-6 section">
-        <h2>Skills</h2>
-          <div class="block skills mt-md-1">
-            <div class="row">
-              <div class="col-auto col-md-4">
-                <h3>Design</h3>
-                <ul class="list-unstyled">
-                  <li>User research</li>
-                  <li>Wireframing</li>
-                  <li>Interface design</li>
-                  <li>Prototyping</li>
-                  <li>Usability testing</li>
-                  <li>Design systems</li>
-                </ul>
-              </div>
-              <div class="col-auto col-md-4">
-                <h3>Tools</h3>
-                <ul class="list-unstyled">
-                  <li>Sketch</li>
-                  <li>Figma</li>
-                  <li>inVision</li>
-                  <li>Overflow</li>
-                  <li>UserTesting</li>
-                  <li>Hotjar</li>
-                </ul>
-              </div>
-              <div class="col-auto col-md-4">
-                <h3>Code</h3>
-                <ul class="list-unstyled">
-                  <li>HTML</li>
-                  <li>Sass</li>
-                  <li>Bootstrap</li>
-                </ul>
+        <!-- Albums -->
+        <section class="about-section about-section--white">
+          <p class="collection-intro" data-reveal>A few records on heavy rotation</p>
+          <div class="album-grid" data-reveal-group>
+
+            <div class="album" data-reveal>
+              <span class="sr-only">Rumours by Fleetwood Mac</span>
+              <div class="album-art" aria-hidden="true">
+                <span class="album-disc" style="--disc-label:var(--clay-ochre)" aria-hidden="true"></span>
+                <div class="album-cover has-art" style="--cover-bg:#7a5a2e;background-image:url('images/album-rumours.jpg')">
+                  <span class="ac-artist">Fleetwood Mac</span>
+                  <span class="ac-title">Rumours</span>
+                </div>
               </div>
             </div>
+
+            <div class="album" data-reveal>
+              <span class="sr-only">Pollination by Off the Wally</span>
+              <div class="album-art" aria-hidden="true">
+                <span class="album-disc" style="--disc-label:var(--clay-lavender)" aria-hidden="true"></span>
+                <div class="album-cover has-art" style="--cover-bg:#2f5a44;background-image:url('images/album-pollination.jpg')">
+                  <span class="ac-artist">Off the Wally</span>
+                  <span class="ac-title">Pollination</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="album" data-reveal>
+              <span class="sr-only">Mulberry Jam by Allah-Las</span>
+              <div class="album-art" aria-hidden="true">
+                <span class="album-disc" style="--disc-label:var(--clay-pink)" aria-hidden="true"></span>
+                <div class="album-cover has-art" style="--cover-bg:#9a5a2a;background-image:url('images/album-mulberry-jam.jpg')">
+                  <span class="ac-artist">Allah-Las</span>
+                  <span class="ac-title">Mulberry Jam</span>
+                </div>
+              </div>
+            </div>
+
           </div>
+        </section>
+
+        <!-- Books -->
+        <section class="about-section about-section--white">
+          <p class="collection-intro" data-reveal>And some books that have stuck with me</p>
+          <div class="book-grid" data-reveal-group>
+            <div class="book" data-reveal>
+              <span class="sr-only">Let My People Go Surfing by Yvon Chouinard</span>
+              <div class="book-cover has-art" aria-hidden="true" style="background-image:url('images/book-surfing.jpg')"><span class="bc-title">Let My People Go Surfing</span><span class="bc-author">Yvon Chouinard</span></div>
+            </div>
+            <div class="book" data-reveal>
+              <span class="sr-only">The Alchemist by Paulo Coelho</span>
+              <div class="book-cover has-art" aria-hidden="true" style="background-image:url('images/book-alchemist.jpg')"><span class="bc-title">The Alchemist</span><span class="bc-author">Paulo Coelho</span></div>
+            </div>
+            <div class="book" data-reveal>
+              <span class="sr-only">The Design of Everyday Things by Don Norman</span>
+              <div class="book-cover has-art" aria-hidden="true" style="background-image:url('images/book-doet.jpg')"><span class="bc-title">The Design of Everyday Things</span><span class="bc-author">Don Norman</span></div>
+            </div>
+            <div class="book" data-reveal>
+              <span class="sr-only">Barbarian Days by William Finnegan</span>
+              <div class="book-cover has-art" aria-hidden="true" style="--cover-bg:#2f6d92;background-image:url('images/book-barbarian-days.jpg')"><span class="bc-title">Barbarian Days</span><span class="bc-author">William Finnegan</span></div>
+            </div>
+          </div>
+        </section>
+
       </div>
-        
-      <!-- education -->
-      <div class="mt-md-7 mt-6 section">
-        <h2>Education</h2>
-        <div class="block">
-          <h3 class="font-weight-light">BSc Digital Media Development</h3>
-          <h4 class="d-inline-block">University of Brighton <span class="text-muted">2010 - 2014</span></h4>
-          <ul class="list-unstyled mb-2">
-            <li>Human-Computer Interaction</li>
-            <li>Mobile Application Design</li>
-            <li>Web Development</li>
-            <li>Visual Design</li>
-          </ul>
-          <span class="text-muted">Upper Second Class Honours (2:1)</span>
-        </div>
-      </div>
-    </div> <!-- /.container -->
+    </section>
+  </main>
 
-   <!-- project carousel -->
-    <div class="container">
-        <div class="project-carousel mt-md-7 mt-6" data-aos="fade-up">
-          <h2>Projects</h2>
-
-          <div class="owl-carousel owl-theme">
-            
-          <!-- 1 -->
-           <div class="card">
-            <a href="increasing-acquisition.html">
-              <div class="bg-grey rounded pt-2 pr-3 pl-3 pt-md-4 pr-md-6 pl-md-6 pb-0 overflow-hidden">
-                <img class="rounded card-img-top shadow-md" src="assets/img/thumbnails/incresing-acquisition@2x.jpg" alt="App project">
-              </div>
-              <div class="card-body">
-                <h5 class="card-text mt-1">Increasing acquisition</h5>
-                <span class="text-muted">HeyBryan</span>
-              </div>
-            </a>
-           </div> <!-- ./ card -->
-            
-          <!-- 2 -->
-           <div class="card">
-            <a href="design-system.html">
-               <div class="bg-grey rounded pt-2 pr-3 pl-3 pt-md-4 pr-md-6 pl-md-6 pb-0 overflow-hidden">
-                <img class="rounded card-img-top shadow-md" src="assets/img/thumbnails/toolbox-thumbnail@2x.jpg" alt="Design system project">
-              </div>
-              <div class="card-body">
-                <h5 class="card-text mt-1">Design system</h5>
-                <span class="text-muted">HeyBryan</span>
-              </div>
-            </a>
-           </div> <!-- ./ card -->
-           
-          <!-- 3 -->           
-           <div class="card">
-              <a href="hacking-retention.html">
-                <div class="bg-grey rounded pt-2 pr-3 pl-3 pt-md-4 pr-md-6 pl-md-6 pb-0 overflow-hidden">
-                  <img class="rounded card-img-top shadow-md" src="assets/img/thumbnails/onboarding-thumbnail@2x.jpg" alt="App project">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-text mt-1">Hacking retention</h5>
-                  <span class="text-muted text-truncate">TrustedHousesitters</span>
-                </div>
-              </a>
-            </div> <!-- ./ card -->
-          
-           <!-- 4 -->
-            <div class="card">
-              <a href="trustedhousesitters.html">
-                <div class="bg-grey rounded pt-2 pr-3 pl-3 pt-md-4 pr-md-6 pl-md-6 pb-0 overflow-hidden">
-                  <img class="rounded card-img-top shadow-md" src="assets/img/thumbnails/th-thumbnail@2x.jpg" alt="Website project">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-text mt-1">Website <span class="d-none d-sm-inline">redesign</span></h5>
-                  <span class="text-muted text-truncate">TrustedHousesitters</span>
-                </div>
-              </a>
-            </div> <!-- ./ card -->
-            
-          <!-- 5 -->
-            <div class="card">
-              <a href="switchback.html">
-                <div class="bg-grey rounded pt-2 pr-3 pl-3 pt-md-4 pr-md-6 pl-md-6 pb-0 overflow-hidden">
-                  <img class="rounded card-img-top shadow-md" src="assets/img/thumbnails/switchback-thumbnail@2x.jpg" alt="App project">
-                </div>
-                <div class="card-body">
-                  <h5 class="card-text mt-1">A cycling app</h5>
-                  <span class="text-muted">University</span>
-                </div>
-              </a>
-            </div> <!-- ./ card -->
-          </div> <!-- ./ owl-carousel -->
-          
-        </div> <!-- ./project-carousel -->
-    </div><!-- .container -->
-
-    <a href="#" class="btn back-to-top btn-primary btn-round" data-smooth-scroll data-aos="fade-up" data-aos-offset="2000" data-aos-mirror="true" data-aos-once="false">
-      <img class="icon" src="assets/img/icons/theme/navigation/arrow-up.svg" alt="arrow-up icon" data-inject-svg />
-    </a>
-    <!-- Required vendor scripts (Do not remove) -->
-    <script type="text/javascript" src="assets/js/jquery.min.js"></script>
-    <script type="text/javascript" src="assets/js/popper.min.js"></script>
-    <script type="text/javascript" src="assets/js/bootstrap.js"></script>
-
-    <!-- Optional Vendor Scripts (Remove the plugin script here and comment initializer script out of index.js if site does not use that feature) -->
-
-    <!-- AOS (Animate On Scroll - animates elements into view while scrolling down) -->
-    <script type="text/javascript" src="assets/js/aos.js"></script>
-    <!-- Clipboard (copies content from browser into OS clipboard) -->
-    <script type="text/javascript" src="assets/js/clipboard.js"></script>
-    <!-- Fancybox (handles image and video lightbox and galleries) -->
-    <script type="text/javascript" src="assets/js/jquery.fancybox.min.js"></script>
-    <!-- Flatpickr (calendar/date/time picker UI) -->
-    <script type="text/javascript" src="assets/js/flatpickr.min.js"></script>
-    <!-- Flickity (handles touch enabled carousels and sliders) -->
-    <script type="text/javascript" src="assets/js/flickity.pkgd.min.js"></script>
-    <!-- Ion rangeSlider (flexible and pretty range slider elements) -->
-    <script type="text/javascript" src="assets/js/ion.rangeSlider.min.js"></script>
-    <!-- Isotope (masonry layouts and filtering) -->
-    <script type="text/javascript" src="assets/js/isotope.pkgd.min.js"></script>
-    <!-- jarallax (parallax effect and video backgrounds) -->
-    <script type="text/javascript" src="assets/js/jarallax.min.js"></script>
-    <script type="text/javascript" src="assets/js/jarallax-video.min.js"></script>
-    <script type="text/javascript" src="assets/js/jarallax-element.min.js"></script>
-    <!-- jQuery Countdown (displays countdown text to a specified date) -->
-    <script type="text/javascript" src="assets/js/jquery.countdown.min.js"></script>
-    <!-- jQuery smartWizard facilitates steppable wizard content -->
-    <script type="text/javascript" src="assets/js/jquery.smartWizard.min.js"></script>
-    <!-- Plyr (unified player for Video, Audio, Vimeo and Youtube) -->
-    <script type="text/javascript" src="assets/js/plyr.polyfilled.min.js"></script>
-    <!-- Prism (displays formatted code boxes) -->
-    <script type="text/javascript" src="assets/js/prism.js"></script>
-    <!-- ScrollMonitor (manages events for elements scrolling in and out of view) -->
-    <script type="text/javascript" src="assets/js/scrollMonitor.js"></script>
-    <!-- Smooth scroll (animation to links in-page)-->
-    <script type="text/javascript" src="assets/js/smooth-scroll.polyfills.min.js"></script>
-    <!-- SVGInjector (replaces img tags with SVG code to allow easy inclusion of SVGs with the benefit of inheriting colors and styles)-->
-    <script type="text/javascript" src="assets/js/svg-injector.umd.production.js"></script>
-    <!-- TwitterFetcher (displays a feed of tweets from a specified account)-->
-    <script type="text/javascript" src="assets/js/twitterFetcher_min.js"></script>
-    <!-- Typed text (animated typing effect)-->
-    <script type="text/javascript" src="assets/js/typed.min.js"></script>
-    <!-- Required theme scripts (Do not remove) -->
-    <script type="text/javascript" src="assets/js/theme.js"></script>
-    <!-- Hide navbar on scroll -->
-    <script type="text/javascript" src="assets/js/jquery.bootstrap-autohidingnavbar.min.js"></script>
-    <!-- owl carousel -->
-    <script src="assets/js/owl.carousel.min.js"></script>
-    <!-- Custom scripts -->
-    <script type="text/javascript" src="assets/js/main.js"></script>
-    <!-- Removes page load animation when window is finished loading -->
-    <script type="text/javascript">
-      window.addEventListener("load", function () {    document.querySelector('body').classList.add('loaded');  });
-    </script>
-
-  </body>
-
+  <footer class="cover-footer">
+    <nav class="cover-footer__contact" aria-label="Contact">
+      <a href="about.html" class="contact-link">About</a>
+      <a href="mailto:hello@kenday.me" class="contact-link">Email</a>
+      <a href="https://www.linkedin.com/in/hellokenday/" class="contact-link" target="_blank" rel="noreferrer">LinkedIn</a>
+    </nav>
+    <ul class="cover-footer__meta" aria-label="Highlights">
+      <li>0-1 products</li>
+      <li>AI products</li>
+      <li>10+ years experience</li>
+      <li>Ex-Multiverse</li>
+    </ul>
+  </footer>
+  <script src="js/theme.js"></script>
+  <script src="js/cursor.js"></script>
+  <script src="js/reveal.js"></script>
+  <script src="js/lazy-media.js" defer></script>
+</body>
 </html>
